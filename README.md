@@ -1,51 +1,48 @@
 <div id="top"></div>
 
-<div style="text-align:center"><img src="images/cover2.jpg" /></div>
+<div style="text-align:center"><img src="images/cover_image.jpg" /></div>
 
 <!-- ABOUT THE PROJECT -->
 ## Description
 
-An app that outputs the amount of payment needed per tenant, according to the days each person
-has spent in the house. There are 2 projects in this repository. `flatmates_bill_pdf` directory
-outputs a pdf file after inputting aforementioned values. The second one, the larger project,
-is a web application, built using Flask.
+Designing a relational database involves creating a structure that organizes and stores data in a way that makes it easy to retrieve and manage. To begin the process, you'll need to review the given specification that outlines the requirements for the database.
 
-This is my first Flask project and my goal was to have situations where I use python code
-to communicate with the front end. Anywhere, where I used the {{}} means this communication
-is taking place.
+The first step in the design process is to identify the entities that will be stored in the database. Entities are the things that the database will be keeping track of, such as customers, products, or orders. Once you have a list of entities, you'll need to determine the attributes that describe each entity. For example, a customer entity might have attributes like name, email address, and phone number.
 
-I used Flask's MethodView class from its MVC architecture (in this case MethodView is the View part).
-I wanted to use both of the methods this class provides, get and post. I used `get` to input user
-information to the back end and manipulate this data to later display the results by connecting
-a button widget to the `post` method.
+After you've identified the entities and their attributes, the next step is to create a table for each entity. Each table should have columns for each of the attributes that you identified earlier. You'll also need to choose a primary key for each table, which is a unique identifier that distinguishes each record in the table.
 
-P.S. The cover image makes it evident that I am hilarious.
+The next step is to establish relationships between the tables. Relationships describe how the entities are connected to each other. There are three types of relationships: one-to-one, one-to-many, and many-to-many. To establish relationships, you'll need to define foreign keys, which are columns that reference the primary key of another table.
 
-To run the web application:
+Once you've established the relationships between the tables, you can begin to normalize the database. Normalization is the process of organizing the data in a way that reduces redundancy and improves data integrity. There are several normal forms, with each higher normal form indicating a higher level of normalization.
 
-1. Download the files.
-2. Run main.py on your `development server`.
+Finally, you'll need to write queries that allow you to retrieve and manipulate the data in the database. Queries are written using a query language, such as SQL. You can use queries to filter and sort data, perform calculations, and join data from multiple tables.
+
+Overall, designing a relational database involves careful planning and attention to detail. By following the steps outlined in this documentation, you'll be able to create a well-organized and efficient database that meets the requirements of the given specification.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- TOOL -->
+## Design Tool
+
+Web Frameworks: [Flask](https://www.lucidchart.com/pages/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-<div style="text-align:center"><img src="images/preview.gif" /></div>
+<!-- DESIGN PROCESS -->
+## Design Process
 
+Please read the `specification.docx` file to start.
 
-<!-- TECH -->
-## Software and Libraries
-
-Web Frameworks: [Flask](https://flask.palletsprojects.com/en/2.0.x/) - install: `$ pip install -U Flask`
-
-Libraries: [WTForms](https://wtforms.readthedocs.io/en/3.0.x/)
-
+<div style="text-align:center"><img src="images/00 base.png" /></div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 
 <!-- CONTRIBUTING -->
 ## Contributing
 
-If you would like to add any extra features to the optimisation simulation, feel free to fork and create a pull request. Thank you!
+If you would like to add any extra features, feel free to fork and create a pull request. Thank you!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -61,8 +58,8 @@ If you would like to add any extra features to the optimisation simulation, feel
 <!-- CONTACT -->
 ## Contact
 
-Erol Gelbul - [Website](http://www.erolgelbul.com) - erolgelbul@gmail.com
+Erol Gelbul - [Website](http://www.erolgelbul.com)
 
-Project Link: [Flatmates Bill](https://github.com/ErolGelbul/flatmates_bill)
+Project Link: [Blog Database Design](https://github.com/ErolGelbul/blog_db_design)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
