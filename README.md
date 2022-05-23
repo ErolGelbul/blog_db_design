@@ -24,7 +24,7 @@ Overall, designing a relational database involves careful planning and attention
 <!-- TOOL -->
 ## Design Tool
 
-Web Frameworks: [Flask](https://www.lucidchart.com/pages/)
+Diagramming Application: [Lucid Chart](https://www.lucidchart.com/pages/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -34,7 +34,28 @@ Web Frameworks: [Flask](https://www.lucidchart.com/pages/)
 
 Please read the `specification.docx` file to start.
 
+1. Construct the base entities.
+
 <div style="text-align:center"><img src="images/00 base.png" /></div>
+
+2. Add the event log.
+
+<div style="text-align:center"><img src="images/01 event_log.png" /></div>
+
+3. Instead of the event log, maybe we can provide a audit log, which will be
+   outside of this system (another database) to keep log information. Due to
+   deletion of `Post` or `User` data.
+
+<div style="text-align:center"><img src="images/02 audit_log and flag.png" /></div>
+
+4. Add commenting functionality. Making sure the diagram is always at 3NF.
+
+<div style="text-align:center"><img src="images/03 comment.png" /></div>
+
+5. Finally, add the rating functionality to the design, given from the specification.
+
+<div style="text-align:center"><img src="images/04 rating.png" /></div>
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
